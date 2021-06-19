@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser')
-const port = 3000
+const port = process.env.PORT || 3000
 const generatePassword = require('./generatePassword')
 
 // setting template engine
